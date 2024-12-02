@@ -1,0 +1,24 @@
+{{define "notifications"}}
+<li class="relative group">
+  <!-- Napis Powiadomienia -->
+  <a
+    href="#"
+    id="notification-menu"
+    class="text-white px-4 py-2 hover:bg-gray-700 transition cursor-pointer"
+    style="background-color: #444"
+  >
+    Powiadomienia
+  </a>
+
+  <!-- Panel z listą powiadomień -->
+  <div
+    id="notification-list"
+    class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 text-white border rounded-b-lg shadow-lg hidden opacity-0 transition-opacity duration-300"
+    style="background-color: #333; border-color: #444"
+  >
+    <ul id="notification-items" class="p-2 space-y-2">
+      <!-- Powiadomienia będą dynamicznie generowane za pomocą JS -->
+    </ul>
+  </div>
+</li>
+{{end}}
